@@ -1,0 +1,30 @@
+
+.book-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+}
+
+.read-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.rate-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.rate-up, .rate-down{
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.id-head, .title-head, .rate-head, .price-head{
+  cursor:  pointer; 
+}

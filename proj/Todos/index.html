@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lib/animate.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Todos</title>
+</head>
+
+<body onload="init()">
+    <h1>
+        Todos
+        <span class="active-count"></span>
+        (total:
+        <span class="total-count"></span>)
+    </h1>
+
+
+    <div class="container">
+        Sort by:
+        <select class="sort-by" onchange="setSort(this.value)">
+            <option>Date Created</option>
+            <option>Text</option>
+            <option>Importancy</option>
+        </select>
+
+        <!-- <table class="status-filter">
+            <thead>
+                <tr>
+                    <td class="filter" onclick="setFilter(this.innerText)">All</td>
+                    <td class="filter" onclick="setFilter(this.innerText)">Active</td>
+                    <td class="filter" onclick="setFilter(this.innerText)">Done</td>
+                </tr>
+            </thead>
+        </table> -->
+        
+        <button class="btn btn-add" onclick="addTodo()">+</button>
+        <ul class="todos">
+
+        </ul>
+        Filter by:
+        <select class="status-filter" onchange="setFilter(this.value)">
+            <option>All</option>
+            <option>Active</option>
+            <option>Done</option>
+        </select>
+
+    </div>
+
+
+    <!-- 
+
+  <li class="todo" onclick="todoClicked(this)">
+                <label>
+                    <input type="checkbox" onclick="event.preventDefault()" /> Item 1
+                </label>
+            </li>
+
+
+ -->
+
+
+
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

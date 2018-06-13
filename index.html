@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Itzik Turjeman Portfolio</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/ca-gallery.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top" onload="init()">
+  <div class="offcanvas-btn" onClick="openCanvas()">
+    <i class="fa fa-comment" aria-hidden="true"></i>
+  </div>
+  <aside class="offcanvas-aside">
+
+    <!-- Contact -->
+    <section id="contact">
+      <h4>Contact Me</h4>
+      <form>
+        <!-- <div class="form-group">
+          <label for="exampleFormControlInput1">Your Email:</label>
+          <input type="email" class="form-control contact-me-email" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div> -->
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Subject:</label>
+          <textarea class="form-control contact-me-subject" id="exampleFormControlTextarea1" placeholder="Type subject here"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Massage body:</label>
+          <textarea class="form-control contact-me-body" id="exampleFormControlTextarea1" rows="3" placeholder="Type massage text here"></textarea>
+        </div>
+        <button type="button" class="btn btn-primary contact-me-btn" onclick="onSubmit()">Send</button>
+      </form>
+    </section>
+
+  </aside>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Meet Me</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#services">Specialities</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#me">Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact" onClick="openCanvas()">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container">
+      <div class="intro-text">
+        <div class="intro-lead-in welcome">Welcome To my world of code</div>
+        <div class="intro-heading nice-to-meet-you">Jump in!</div>
+        <a class="btn btn-xl js-scroll-trigger" href="#services">Tell Me More</a>
+      </div>
+    </div>
+  </header>
+
+    <!-- Me -->
+    <section class="bg-light" id="me" style="padding: 0px;">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="img/team/me.jpg" alt="">
+            <h4>Itzik Turjeman</h4>
+            <p class="text-muted">Full Stack Developer</p>
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/itzik-turjeman-itzikit">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.instagram.com/shpitzik/">
+                  <i class="fa fa-instagram"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-8 flex-align-center">
+          <div class="large text-muted  about-description">
+            <p>Currently studying Full stack development. interested in junior FSD position.</p>
+            <p>A bit of my experience record:</p>
+            <ul>
+              <li>Eight years of multi-disciplinary hands-on technical experience including professional project management in
+                the last three years ,starting from requirements analysis and writing specs to QA and implementation.</li>
+              <li>Areas of expertise: financial system administration, Quality Assurance and Technical Support mainly in the hi-tech
+                and insurance industries.</li>
+              <li>Specializing in end-to-end operations and maintenance of diverse information systems including NetSuite (ERP),
+                SuccessFactors (CRM), BizDoc, CombTas and Concur.</li>
+              <li>Team player with solid problem solving and troubleshooting skills, excellent interpersonal relations and ability
+                to lead technical staffs.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- Services -->
+  <section id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Specialities</h2>
+          <h3 class="section-subheading text-muted">just a little bit about me.</h3>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+            <i class="fa fa-magnet fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="service-heading">Power of knoledge</h4>
+          <p class="text-muted">At the age of 36 i decided to make a change in my profesional life and become an app developer.<br>As long as I can keep learning and train my brain with new professional information, I'll never be board with what I do.<br>I believe that life of code is my destiny.</p>
+        </div>
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+            <i class="fa fa-check-square-o fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="service-heading">Master of QA</h4>
+          <p class="text-muted">7 years of experience in the QA world, testing vast of financial softwares and business procedures and manage a QA team.<br>If there is a bug, i'll find it.</p>
+        </div>
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+            <i class="fa fa-camera fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="service-heading">Photographer</h4>
+          <p class="text-muted">I see life as glimps of pictures, that together build one big story that eventualy reflecting our lives.<br>Taking pictures is an art of compozitions and giving different translation to what you see in the picture itself.<br>Look me up on Instagram by the name Shpitzik. Enjoy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Grid -->
+  <section class="bg-light" id="portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Itzik Turjeman's portfolio</h2>
+          <h3 class="section-subheading text-muted">You are more than welcome to review some of my lateast work</h3>
+        </div>
+      </div>
+      <div class="row my-portfolio">
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- Footer -->
+  <!-- <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 flex-align-center">
+          <a href="http://coding-academy.org" target="_blank">
+            <img src="./img/ca-logo.png" alt="">
+          </a>
+        </div>
+        <div class="col-md-4 flex-align-center">
+          <ul class="list-inline social-buttons flex-align-center">
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item flex-align-center">
+              <a href="#">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4 flex-align-center">
+          <ul class="list-inline quicklinks">
+            <li class="list-inline-item">
+              <a href="#">More Me</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">Even More</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer> -->
+
+  <!-- Portfolio Modals -->
+
+  <!-- Modal 1 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="modal-proj-name">Project Name</h2>
+                <p class="item-intro text-muted modal-proj-title">Lorem ipsum dolor sit amet consectetur.</p>
+                <img class="img-fluid d-block mx-auto modal-proj-img" src="img/portfolio/01-full.jpg" alt="">
+                <p class="modal-proj-desc">Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis
+                  dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate,
+                  maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <ul class="list-inline">
+                  <li><a class="modal-proj-link" href="https//test">Give it a try</a></li>
+                  <li class="modal-proj-date">Date: January 2017</li>
+                  <li class="proj-lables"></li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fa fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/popper/popper.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/ca-gallery.js"></script>
+  <script src="js/offCanvas.js"></script>
+  <script src="js/service-projs.js"></script>
+  <script src="js/main.js"></script>
+
+
+</body>
+
+</html>

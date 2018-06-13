@@ -1,0 +1,21 @@
+td {
+    padding: 5px;
+    color: black;
+    background-color: #f0b81f;
+    border-color: black;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+
+}
+
+.level {
+    background: aqua;
+    font-family: sans-serif;
+    align-content: center;
+    padding: 1em;
+}
+
+.container {
+    align-content: center;
+}

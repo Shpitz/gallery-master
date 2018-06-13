@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div>
+        <table>
+            <tbody>
+                <tr>
+                    <td class="myButton screen" colspan="5">0</td>
+                </tr>
+                <tr>
+                    <td class="myButton" onclick="memoryBehavior('MC')">MC</td>
+                    <td class="myButton" onclick="memoryBehavior('MR')">MR</td>
+                    <td class="myButton" onclick="memoryBehavior('MS')">MS</td>
+                    <td class="myButton" onclick="memoryBehavior('M+')">M+</td>
+                    <td class="myButton" onclick="memoryBehavior('M-')">M-</td>
+                </tr>
+                <tr>
+                    <td class="myButton" onclick="deleteDigit()">⟵</td>
+                    <td class="myButton" onclick="clear1('CE')">CE</td>
+                    <td class="myButton" onclick="clear1('C')">C</td>
+                    <td class="myButton" onclick="toMinus()">±</td>
+                    <td class="myButton" onclick="setOp('√')">√</td>
+                </tr>
+                <tr>
+                    <td class="myButton" onclick="addDigit(7)">7</td>
+                    <td class="myButton" onclick="addDigit(8)">8</td>
+                    <td class="myButton" onclick="addDigit(9)">9</td>
+                    <td class="myButton" onclick="setOp('÷')">÷</td>
+                    <td class="myButton" onclick="setOp('%')">%</td>
+                </tr>
+                <tr>
+                    <td class="myButton" onclick="addDigit(4)">4</td>
+                    <td class="myButton" onclick="addDigit(5)">5</td>
+                    <td class="myButton" onclick="addDigit(6)">6</td>
+                    <td class="myButton" onclick="setOp('×')">×</td>
+                    <td class="myButton">1/x</td>
+                </tr>
+                <tr>
+                    <td class="myButton" onclick="addDigit(1)">1</td>
+                    <td class="myButton" onclick="addDigit(2)">2</td>
+                    <td class="myButton" onclick="addDigit(3)">3</td>
+                    <td class="myButton" onclick="setOp('-')">-</td>
+                    <td class="myButton equal-sign" rowspan="2" onclick="showResult('=')">=</td>
+                </tr>
+                <tr>
+                    <td class="myButton" colspan="2" onclick="addDigit(0)">0</td>
+                    <td class="myButton" onclick="addDigit('.')">.</td>
+                    <td class="myButton" onclick="setOp('+')">+</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

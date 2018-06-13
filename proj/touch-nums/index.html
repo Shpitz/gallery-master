@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Touch Nums</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <button class="new-game" onclick="newGame()">New Game</button>
+        </div>
+        <div>
+            <p>Game Time: &nbsp; <span class="timer">0</span></p>
+        </div>
+        <div>
+            <button onclick="printGame(16)">Easy</button>
+            <button onclick="printGame(25)">Hard</button>
+            <button onclick="printGame(36)">Extreme!</button>
+
+        </div>
+        <table border="1" cellpadding="10">
+         <tbody class="tblGame">
+
+         </tbody>   
+        </table>
+    </div>
+
+    <script src=js/main.js></script>
+</body>
+
+</html>
